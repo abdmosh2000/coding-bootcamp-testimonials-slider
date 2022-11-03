@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+}
+
+body::after {
+  content: '';
+  display: block;
+  width: 450px;
+  height: 100px;
+  background: url("/images/pattern-curve.svg") no-repeat;
+}
+
+@media (min-width: 600px) {
+  body::after {
+    display: none;
+  }
+}
+
+.testimonial {
+  width: 375px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+@media (min-width: 600px) {
+  .testimonial {
+    width: 950px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.testimonial__banner {
+  background: url("/images/pattern-bg.svg") no-repeat;
+  background-size: contain;
+  height: 308px;
+  position: relative;
+  margin-bottom: 63px;
+}
+
+@media (min-width: 600px) {
+  .testimonial__banner {
+    height: 500px;
+    width: 670px;
+    margin: 0;
+  }
+}
+
+.testimonial__banner .author__img {
+  width: 254px;
+  height: 250px;
+  position: absolute;
+  top: 26px;
+  left: 32px;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .testimonial__banner .author__img {
+    top: 70px;
+    left: 70px;
+    width: 338px;
+    height: 338px;
+  }
+}
+
+.testimonial__banner .toggler {
+  position: absolute;
+  top: 260px;
+  left: 126px;
+  background-color: #fff;
+  padding: 10px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5rem;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial__banner .toggler img {
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .testimonial__banner .toggler {
+    top: 390px;
+    left: 126px;
+    width: 90px;
+  }
+}
+
+.testimonial__banner .active {
+  display: block;
+}
+
+.testimonial__bottom {
+  text-align: center;
+  padding-top: 63px;
+  color: #202046;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .testimonial__bottom {
+    font-size: 1.5rem;
+    width: 650px;
+    text-align: left;
+    padding: 0;
+    position: relative;
+    left: 70px;
+  }
+}
+
+.testimonial__bottom .quote {
+  position: relative;
+  padding-bottom: 23px;
+}
+
+.testimonial__bottom .quote::before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 100px;
+  background: url("/images/pattern-quotes.svg") no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -60px;
+  left: 120px;
+}
+
+.testimonial__bottom .author p {
+  display: inline-block;
+}
+
+.testimonial__bottom .author__name {
+  font-weight: bold;
+}
+
+.testimonial .active {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
